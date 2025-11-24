@@ -20,7 +20,6 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
 
   return (
     <DocsPage toc={page.data.toc}>
-      <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
 
       <div className="inline-block">
