@@ -18,6 +18,7 @@ import { localizeHref } from "@/lib/locale";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useMessages } from "@/lib/hooks/useMessages";
+import { branch, commit } from "@/git-info.json";
 
 import WulfrumProsthesis from "./(showcaseImages)/wulfrum_prosthesis.png";
 import DragonFlyMount from "./(showcaseImages)/dragonfly_mount.gif";
@@ -25,7 +26,7 @@ import Melodium from "./(showcaseImages)/Melodium.gif";
 import GaleWivern from "./(showcaseImages)/gale_wivern.gif";
 import WulfrumArmor from "./(showcaseImages)/Wulfrum_Armor.gif";
 import { DiscordButton } from "./discord-button";
-
+import { GitInfoButton } from "@/components/git-info-button";
 
 interface CarouselItem {
   title: string;
@@ -84,6 +85,7 @@ export default function HomePage() {
 
   return (
     <div className="relative flex flex-1 overflow-hidden">
+      <GitInfoButton />
       <Spotlight />
       <div className="container mx-auto flex flex-1 flex-col gap-8 px-12 py-8 lg:flex-row lg:items-center lg:justify-between lg:py-0">
         <div className="w-lg space-y-6 max-lg:py-32 lg:max-w-2xl">
@@ -114,7 +116,7 @@ export default function HomePage() {
             plugins={[
               Autoplay({
                 delay: 2000,
-              })
+              }),
             ]}
           >
             <CarouselContent className="-mt-1 h-96">
@@ -133,7 +135,11 @@ export default function HomePage() {
                             </h2>
                           </div>
                           <Button size="icon-lg" asChild>
-                            <Link href={item.link} target="_blank" rel="noopener noreferrer">
+                            <Link
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <ExternalLinkIcon />
                             </Link>
                           </Button>
