@@ -1,6 +1,14 @@
-import type { ReactNode } from "react";
+import { ViewTransition, type ReactNode } from "react";
 import { HomeLayout } from "fumadocs-ui/layouts/home";
 import { baseOptions } from "@/lib/layout.shared";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hytale Modding",
+  description:
+    "An unofficial community for modding Hytale, providing guides, documentation, and resources.",
+};
+
 export default async function Layout({
   params,
   children,
@@ -9,5 +17,11 @@ export default async function Layout({
   children: ReactNode;
 }) {
   const { lang } = await params;
-  return <HomeLayout {...baseOptions(lang)}>{children}</HomeLayout>;
+  return (
+    <ViewTransition update="none">
+      <HomeLayout {...baseOptions(lang)} className="min-h-screen flex flex-col">
+        {children}
+      </HomeLayout>
+    </ViewTransition>
+  );
 }

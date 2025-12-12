@@ -1,4 +1,15 @@
 * @ItsNeil17
 
-/content/docs/what-we-know-so-far/ways-to-develop/text-based.mdx @okunamayanad
-‎/content/docs/what-we-know-so-far/developer-qa-insights.mdx @Laophy
+# Guides
+/content/docs/en/guides/* @ItsNeil17 @okunamayanad @bencres
+
+# Community Projects
+/content/docs/en/projects/hylamity.mdx @Azathoth-Github
+/content/docs/en/projects/kytale.mdx @oglassdev
+/content/docs/en/projects/hyperions.mdx @maemachinebroke
+/content/docs/en/projects/transfer-api.mdx @shailist
+
+# Website
+
+/src/app/\[lang\]/(home)/* @ItsNeil17 @okunamayanad
+/src/app/components/* @okunamayanad
