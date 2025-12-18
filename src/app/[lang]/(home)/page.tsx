@@ -45,7 +45,7 @@ export default function HomePage() {
       title: "Hynergy: Electric Motor",
       author: "by seyager",
       image: ElectricMotor,
-      link: "https://x.com/SeyagerYT"
+      link: "https://x.com/SeyagerYT",
     },
     {
       title: "[WIP] Hylamity: Wulfrum Prosthesis",
@@ -117,7 +117,7 @@ export default function HomePage() {
             className="w-full"
             plugins={[
               Autoplay({
-                delay: 2000,
+                delay: 4000,
               }),
             ]}
           >
