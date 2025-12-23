@@ -126,7 +126,9 @@ export default async function ProjectPage({
               src={project.frontmatter.banner!}
               alt={`${project.frontmatter.title} banner`}
               fill
-              className="object-cover"
+              className="w-full h-full object-cover scale-105"
+              unoptimized={true}
+              sizes="100vw"
               priority
             />
           ) : (
