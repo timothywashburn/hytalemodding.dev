@@ -26,6 +26,7 @@ import Melodium from "./(showcaseImages)/Melodium.gif";
 import GaleWivern from "./(showcaseImages)/gale_wivern.gif";
 import WulfrumArmor from "./(showcaseImages)/Wulfrum_Armor.gif";
 import ElectricMotor from "./(showcaseImages)/HyEnergy_Electric_Motor.gif";
+import WulfrumTriangle from "./(showcaseImages)/Wulfrum_triangle.gif";
 import { DiscordButton } from "./discord-button";
 import { SponsorButton } from "./support-button";
 import { GitInfoButton } from "@/components/git-info-button";
@@ -232,7 +233,11 @@ export default function HomePage() {
       type: "art",
     },
     {
-      title: ""
+      title: "[WIP] Hylamity: Wulfrum Triangle",
+      author: "by alder_",
+      image: WulfrumTriangle,
+      link: "https://discord.gg/f2fMKYnRqR",
+      type: "art",
     }
   ];
 
