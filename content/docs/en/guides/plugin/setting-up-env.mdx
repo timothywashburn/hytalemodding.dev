@@ -36,6 +36,14 @@ java -version
 brew install openjdk@25
 ```
 
+<Callout type="info">
+If `java --version` shows "Unable to locate a Java Runtime", add OpenJDK to your PATH:
+```bash
+echo 'export PATH="$(brew --prefix)/opt/openjdk@25/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+</Callout>
+
 #### Linux (Ubuntu/Debian)
 ```bash
 sudo apt update
